@@ -1,0 +1,29 @@
+{
+  "name": "moneylion-test",
+  "version": "1.0.0",
+  "description": "Technical Assessment\r User story:\r As Product Manager, I would like to manage users’ accesses to new features via feature switches,\r i.e. enabling/disabling certain feature based on a user’s email and feature names).\r Requirements:\r GET /feature?email=XXX&featureName=XXX  \r This endpoint receives  email  (user’s email) and  featureName  as request parameters and\r returns the following response in JSON format.\r Example Response:\r POST /feature  \r This endpoint receives the following request in JSON format and returns an empty\r response with HTTP Status OK (200) when the database is updated successfully, otherwise\r returns H",
+  "main": "app.ts",
+  "dependencies": {
+    "fastify": "^3.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "tap": "^15.0.10",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "start": "ts-node ./app.ts",
+    "test": "ts-node ./tests/app.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twk819/moneylion-test.git"
+  },
+  "author": "KHOO THIEN WERN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twk819/moneylion-test/issues"
+  },
+  "homepage": "https://github.com/twk819/moneylion-test#readme"
+}
